@@ -24,6 +24,7 @@ class STLDecomposition:
         data = data.rename(columns={data.columns[0]: "HICP"}).reset_index()
         data = data.rename(columns={"index": "date"})
         return data
+        #check
     
     def add_feature(self, data):
         data["HICP"] = pd.to_numeric(data["HICP"], errors="coerce")
